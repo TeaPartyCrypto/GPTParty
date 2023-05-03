@@ -14,7 +14,7 @@ RUN go mod download
 COPY . .
 
 # Build the program
-RUN go build -o main .
+RUN cd cmd && go build -o ../main
 
 # Expose the necessary port for the Discord bot (optional)
 EXPOSE 8080

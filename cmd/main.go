@@ -202,7 +202,7 @@ type gPTResponse struct {
 	Choices []struct {
 		Text         string `json:"text"`
 		Index        int    `json:"index"`
-		Logprobs     any    `json:"logprobs"`
+		Logprobs     string `json:"logprobs"`
 		FinishReason string `json:"finish_reason"`
 	} `json:"choices"`
 	Usage struct {
